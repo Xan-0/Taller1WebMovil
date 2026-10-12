@@ -3,15 +3,77 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Titulo</title>
+        <title>Venta de Productos</title>
 
         <link href="css/styles.css" rel="stylesheet"></link>
+        <script src="js/index.js"></script>
     </head>
+    
+    <body class="bg-gray-800 text-center">
+        <img id="bg-image" src="assets/bg1.png" class="content-background bg-no-repeat animate-pulse">
+        
+        <div id="scroll-lib" class="container absolute">
+            <img src="assets/bg1.png" class="bg-no-repeat fixed mask-b-from-yellow-300
+            max-md:left-[-43vw] max-md:top-[-43vw] max-lg:scale-10 md:-left-60 md:-top-60 lg:scale-17 2xl:scale-25
+            timeline-scroll animate-spin-clockwise animate-range-[-20%_100%] animate-duration-100"
+            alt='scroll-lib'>
+        </div>
 
-    <body class="relative bg-gray-800 text-center">
+        <div id="scroll-nolib" class="container absolute">
+            <img id="img-scroll-nolib" src="assets/bg1.png" class="bg-no-repeat fixed
+            max-md:right-[-43vw] max-md:top-[-43vw] max-lg:scale-10 md:-right-60 md:-top-60 lg:scale-17 2xl:scale-25"
+            alt='scroll-nolib'>
+        </div>
+        
+        <section id="presentacion" class="presentacion py-300 select-none container mx-auto grid md:grid-cols-2 sm:grid-cols-1 timeline-scroll animate-zoom-in animate-range-[20%_40%] max-lg:animate-range-[30%_43%]">
+            <div>
+                <h1 class="title text-4xl text-blue-800 font-bold">
+                    Venta de productos
+                </h1>
+            </div>
+            <div>
+                <div class="text-gray-400 font-bold">
+                    "Vendemos sus productos a cambio de una comisión,<br>
+                    ¡Siempre y cuando se cumplan con nuestros estándares de calidad!"
+                </div>
+                <center><div class="not-hover:animate-spin hover:animate-blurred-fade-in" style="font-size: calc(3vw + 2vh); width: fit-content;">💫</div></center>
+            </div>
+        </section>
 
-        <h1 class="text-4xl text-blue-500">Hello Tailwind!</h1>
+        <center><details class="p-1 border border-transparent open:border-cyan-500 open:bg-blue-950 open:animate-fade-in"
+            style="width: calc(30vw + 20vh); border-radius: calc(1vw + 1vh); border-width: calc(0.2vw + 0.2vh);">
 
+            <summary class="font-semibold text-white select-none" style="font-size: calc(1vw + 2vh);">
+                Más información
+            </summary>
+            
+            <div id="info" class="text-left px-1.5 pb-1.5 mt-3 text-gray-400" style="font-size: calc(0.5vw + 2vh);">
+                <p>detalles...</p>
+            </div>
+
+        </details></center>
+        <br>
+
+        <section id="hero" class="hero py-50 select-none container mx-auto hover:outline-1 lg:font-bold timeline-scroll animate-blurred-fade-in animate-range-[70%_95%] [lg_xl]:animate-range-[70%_85%]">
+            Productos ejemplares
+            <div>
+                <div class="product mask-l-from-70% mask-l-to-100% hover:animate-pulse text-center border">
+                    Camiseta con logo<br>
+                    - Talla XL - Azul
+                </div>
+                <div class="product mask-l-from-70% mask-l-to-100% hover:animate-pulse text-center border">
+                    Dron eléctrico<br>
+                    - 12 horas de autonomía<br>
+                    - hasta 150 metros de distancia
+                </div>
+                <div class="product mask-l-from-70% mask-l-to-100% hover:animate-pulse text-center border">
+                    Tarjeta Gráfica<br>
+                    - NVidia RTX099<br>
+                    - 2GB VRAM GDDR4<br>
+                    - Velocidad 1446MHz
+                </div>
+            </div>
+        </section>
     </body>
 
 </html>
