@@ -554,12 +554,22 @@
   padding-bottom: calc(1vw + 4vh);
   outline-color: aquamarine;
 }
+
 .product {
   border-color: cyan;
   animation-duration: 1250ms;
   border-radius: calc(1vw + 1vh);
   border-width: calc(0.2vw + 0.2vh);
+  grid-column:1;
 }
+
+.product img{
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  align-items: center;
+}
+
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
