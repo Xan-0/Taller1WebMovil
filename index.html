@@ -7,9 +7,21 @@
 
         <link href="css/styles.css" rel="stylesheet"></link>
         <script src="js/index.js"></script>
+
     </head>
     
     <body class="bg-gray-800 text-center">
+        <nav class="menu-flotante">
+        <div class="menu-pestaña">☰</div>
+        
+        <ul class="menu-enlaces">
+            <li class="menu-item-titulo">Navegación</li>
+            <li><a href="#bienvenida">Inicio</a></li>
+            <li><a href="#presentacion">Presentación</a></li>
+            <li><a href="#hero">Productos</a></li>
+        </ul>
+        </nav>
+
         <img id="bg-image" src="assets/fondo.jpg" class="content-background bg-no-repeat animate-pulse">
         
         <div id="scroll-lib" class="container absolute">
@@ -25,6 +37,14 @@
             alt='scroll-nolib'>
         </div>
         
+        <section id="bienvenida" class="container-bv animate-blurred-fade-in">
+            <div class="bienvenida">
+                <h1 class="bienvenida-titulo">¡Bienvenido al centro del mercado gamer!</h1>
+                <p class="bienvenida-texto">Descubre todo lo que tenemos para ofrecerte deslizando hacia abajo.</p>
+            </div>
+            
+        </section>
+
         <section id="presentacion" class="presentacion py-300 select-none container mx-auto grid md:grid-cols-2 sm:grid-cols-1 timeline-scroll animate-zoom-in animate-range-[20%_40%] max-lg:animate-range-[30%_43%]">
             <div>
                 <h1 class="title text-4xl text-blue-800 font-bold">
@@ -40,25 +60,12 @@
             </div>
         </section>
 
-        <center><details class="p-1 border border-transparent open:border-cyan-500 open:bg-blue-950 open:animate-fade-in"
-            style="width: calc(30vw + 20vh); border-radius: calc(1vw + 1vh); border-width: calc(0.2vw + 0.2vh);">
 
-            <summary class="font-semibold text-white select-none" style="font-size: calc(1vw + 2vh);">
-                Más información
-            </summary>
-            
-            <div id="info" class="text-left px-1.5 pb-1.5 mt-3 text-gray-400" style="font-size: calc(0.5vw + 2vh);">
-                <p>detalles...</p>
-            </div>
-
-        </details></center>
-        <br>
-
-        <section id="hero" class="hero py-50 select-none container mx-auto hover:outline-1 lg:font-bold timeline-scroll animate-blurred-fade-in animate-range-[70%_95%] [lg_xl]:animate-range-[70%_85%]">
+        <section id="hero" class="hero py-50 select-none container mx-auto hover:outline-1 lg:font-bold timeline-scroll animate-blurred-fade-in animate-range-[45%_70%] [lg_xl]:animate-range-[45%_65%]">
             Productos destacados
             <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
                 
-                <div class="product flex flex-col items-center border p-4 text-center mask-l-from-70% mask-l-to-100% hover:animate-pulse">
+                <div class="product flex flex-col items-center border p-4 text-center mask-l-from-10% mask-l-to-40% hover:animate-pulse">
                     <center><img src="assets/I5-10400-F1.png" alt="Procesador i5" class="mb-4 max-h-40 w-full object-contain"></center>
                     <div>
                         <span class="font-semibold">Procesador i5</span><br>
@@ -66,19 +73,46 @@
                         - 2.9 Ghz
                     </div>
                 </div>
-                <div class="product mask-l-from-70% mask-l-to-100% hover:animate-pulse text-center border">
+                <div class="product flex flex-col items-center border p-4 text-center mask-l-from-10% mask-l-to-40% hover:animate-pulse">
+                    <center><img src="assets/dron.webp" class="mb-4 max-h-40 object-contain"></center>
                     Dron eléctrico<br>
                     - 12 horas de autonomía<br>
                     - hasta 150 metros de distancia
                 </div>
-                <div class="product mask-l-from-70% mask-l-to-100% hover:animate-pulse text-center border">
+                <div class="product flex flex-col items-center border p-4 text-center mask-l-from-10% mask-l-to-40% hover:animate-pulse">
+                    <center><img src="assets/grafica.png" class="mb-4 max-h-40 w-full object-contain"></center>
                     Tarjeta Gráfica<br>
-                    - NVidia RTX099<br>
-                    - 2GB VRAM GDDR4<br>
-                    - Velocidad 1446MHz
+                    - NVidia RTX 5060ti<br>
+                    - 24GB VRAM GDDR6<br>
+                    - Velocidad 2438MHz
+                </div>
+                <div class="product flex flex-col items-center border p-4 text-center mask-l-from-10% mask-l-to-40% hover:animate-pulse">
+                    <center><img src="assets/adaptadores.jpg" class="mb-4 max-h-40 w-full object-contain"></center>
+                    Set de Adaptadores de celular<br>
+                    - Adaptador tipo C a A <br>
+                    - Adaptador tipo C a B<br>
+                    - Clip para extracción de memorias/SIM 
                 </div>
             </div>
         </section>
+
+        <center><details class="p-1 border border-transparent open:border-cyan-500 open:bg-blue-950 open:animate-fade-in"
+            style="width: calc(30vw + 20vh); border-radius: calc(1vw + 1vh); border-width: calc(0.2vw + 0.2vh);">
+
+            <summary class="font-semibold text-white select-none" style="font-size: calc(1vw + 2vh);">
+                Quiero vender mis productos
+            </summary>
+            
+            <div id="info" class="text-left px-1.5 pb-1.5 mt-3 text-gray-400" style="font-size: calc(0.5vw + 2vh);">
+                <p class="font-bold">Contacta con nosotros:</p>
+                <ol class="list-decimal pl-5 space-y-1 text-gray-400">
+                    <li>- Envíanos fotos reales y las especificaciones de tu hardware por nuestro canal oficial.</li>
+                    <li>- Fijamos un precio justo de mutuo acuerdo.</li>
+                    <li>- ¡Lo promocionamos en nuestro escaparate destacado hasta que se venda!</li>
+                </ol>
+            </div>
+
+        </details></center>
     </body>
 
 </html>
