@@ -12,9 +12,6 @@ Landing page de un servicio que trata de vender productos a comisión.
 
 - Instalar tailwind-animations: ```npm install tailwind-animations```
 
-- (Opcional) Compilar el css de input en caso de que se necesite re-generar el css de salida de tailwind:
-```npx @tailwindcss/cli -i ./css/tailwind_input.css -o ./css/styles.css --watch```
-
 - Abrir ```index.html``` en el navegador.
 
 ## Checklist:
@@ -26,6 +23,6 @@ Landing page de un servicio que trata de vender productos a comisión.
 - [x] animacion asociada a alguna accion del usuario
 - [x] animacion de aparicion o transicion
 - [x] animacion totalmente manual css y/o javascript
-- [] mejoras generales de visualización
-- [] añadir distintas imágenes
-- [] mejoras en la presentación y descripción del servicio
+- [x] mejoras generales de visualización
+- [x] añadir distintas imágenes
+- [x] mejoras en la presentación y descripción del servicio
