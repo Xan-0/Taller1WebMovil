@@ -211,7 +211,7 @@
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .animate-blurred-fade-in {
-    animation: blurred-fade-in 0.9s ease-in-out both;
+    animation: blurred-fade-in 0.5s ease-in-out both;
   }
   .animate-pulse {
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
@@ -348,6 +348,12 @@
     }
   }
   @media (width < 64rem) {
+    .max-lg\:scale-15 {
+      --tw-scale-x: 15%;
+      --tw-scale-y: 15%;
+      --tw-scale-z: 15%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
     .max-lg\:scale-10 {
       --tw-scale-x: 10%;
       --tw-scale-y: 10%;
@@ -356,6 +362,9 @@
     }
     .max-lg\:animate-range-\[30\%_43\%\] {
       animation-range: 30% 43%;
+    }
+    .max-lg\:animate-range-\[65\%_73\%\] {
+        animation-range: 65% 73%;
     }
   }
   @media (width < 48rem) {
@@ -378,17 +387,29 @@
     .md\:-top-60 {
       top: calc(var(--spacing) * -60);
     }
+    .md\:-top-35 {
+      top: calc(var(--spacing) * -35);
+    }
     .md\:-right-60 {
       right: calc(var(--spacing) * -60);
     }
     .md\:-left-60 {
       left: calc(var(--spacing) * -60);
     }
+    .md\:-left-35 {
+      left: calc(var(--spacing) * -35);
+    }
     .md\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   @media (width >= 64rem) {
+    .lg\:scale-20 {
+      --tw-scale-x: 20%;
+      --tw-scale-y: 20%;
+      --tw-scale-z: 20%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
     .lg\:scale-17 {
       --tw-scale-x: 17%;
       --tw-scale-y: 17%;
@@ -399,6 +420,9 @@
       --tw-font-weight: var(--font-weight-bold);
       font-weight: var(--font-weight-bold);
     }
+    .lg\:animate-range-\[58\%_70\%\] {
+      animation-range: 58% 70%;
+    }
   }
   @media (width >= 96rem) {
     .\32 xl\:scale-25 {
@@ -407,9 +431,6 @@
       --tw-scale-z: 25%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
-  }
-  .\[lg_xl\]\:animate-range-\[70\%_85\%\]:is(lg xl) {
-    animation-range: 70% 85%;
   }
   .animate-dialog {
     opacity: var(--tw-anim-dialog-start-opacity, 0);
@@ -443,7 +464,7 @@
   .animate-dialog::backdrop {
     opacity: 0;
     background: var(--tw-anim-dialog-backdrop-background, rgb(15 23 42 / 0.58));
-    backdrop-filter: var(--tw-anim-dialog-backdrop-filter, blur(8px));
+    backdrop-filter: var(--tw-anim-dialog-backdrop-filter, blur(15px));
     transition: opacity var(--tw-anim-dialog-duration, 350ms) ease, overlay var(--tw-anim-dialog-duration, 350ms) ease allow-discrete, display var(--tw-anim-dialog-duration, 350ms) ease allow-discrete;
   }
   .animate-dialog[open]::backdrop {
@@ -533,7 +554,7 @@
 }
 .content-background {
   z-index: -1;
-  animation-duration: 4000ms;
+  animation-duration: 5000ms;
   justify-self: auto;
   position: fixed;
 }
@@ -718,7 +739,7 @@
 }
 @keyframes pulse {
   50% {
-    opacity: 0.5;
+    opacity: 0.4;
   }
 }
 @keyframes fade-in {
@@ -741,10 +762,10 @@
 }
 @keyframes pulse {
   0%, 100% {
-    opacity: 1;
+    opacity: 0.8;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.4;
   }
 }
 @keyframes spin-clockwise {
@@ -757,7 +778,7 @@
 }
 @keyframes blurred-fade-in {
   0% {
-    filter: blur(5px);
+    filter: blur(7px);
     opacity: 0;
   }
   100% {
