@@ -306,8 +306,8 @@
     -webkit-user-select: none;
     user-select: none;
   }
-  .animate-range-\[-20\%_100\%\] {
-    animation-range: -20% 100%;
+  .animate-range-\[0\%_100\%\] {
+    animation-range: 0% 100%;
   }
   .animate-range-\[20\%_40\%\] {
     animation-range: 20% 40%;
@@ -420,8 +420,8 @@
       --tw-font-weight: var(--font-weight-bold);
       font-weight: var(--font-weight-bold);
     }
-    .lg\:animate-range-\[58\%_70\%\] {
-      animation-range: 58% 70%;
+    .lg\:animate-range-\[53\%_65\%\] {
+      animation-range: 53% 65%;
     }
   }
   @media (width >= 96rem) {

@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Venta de Productos</title>
+        <link rel="icon" type="image/x-icon" href="assets/bg1.png">
 
         <link href="css/styles.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/tailwind_input.css">
+        <link href="css/styles2.css" rel="stylesheet">
         <script src="js/index.js"></script>
-
     </head>
     
     <body class="bg-gray-800 text-center select-none">
@@ -16,7 +16,7 @@
         <div class="menu-pestaña">☰</div>
         
         <ul class="menu-enlaces">
-            <li class="menu-item-titulo">Navegación</li>
+            <li class="menu-item-titulo animate-pulse">Navegación</li>
             <li><a href="#bienvenida">Inicio</a></li>
             <li><a href="#presentacion">Presentación</a></li>
             <li><a href="#hero">Productos</a></li>
@@ -26,9 +26,9 @@
         <img id="bg-image" src="assets/fondo1.jpeg" class="content-background bg-no-repeat animate-pulse">
         
         <div id="scroll-lib" class="container absolute">
-            <img src="assets/sign-move.jpg" class="bg-no-repeat fixed mask-b-from-yellow-300
+            <img src="assets/bg2.png" class="bg-no-repeat fixed mask-b-from-yellow-300
             max-md:left-[-43vw] max-md:top-[-43vw] max-lg:scale-15 md:-left-35 md:-top-35 lg:scale-20 2xl:scale-25
-            timeline-scroll animate-spin-clockwise animate-range-[-20%_100%] animate-duration-100"
+            timeline-scroll animate-spin-clockwise animate-range-[0%_100%] animate-duration-100"
             alt='scroll-lib'>
         </div>
 
@@ -62,7 +62,7 @@
         </section>
 
 
-        <section id="hero" class="hero py-50 select-none container mx-auto hover:outline-1 lg:font-bold timeline-scroll animate-blurred-fade-in max-lg:animate-range-[65%_73%] lg:animate-range-[58%_70%] titulo-cyber">
+        <section id="hero" class="hero py-50 select-none container mx-auto hover:outline-1 lg:font-bold timeline-scroll animate-blurred-fade-in max-lg:animate-range-[65%_73%] lg:animate-range-[53%_65%] titulo-cyber">
             Productos destacados
             <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
                 
@@ -97,6 +97,7 @@
             </div>
         </section>
 
+
         <center><details class="p-1 border border-transparent open:border-cyan-500 open:bg-blue-950 open:animate-fade-in"
             style="width: calc(30vw + 20vh); border-radius: calc(1vw + 1vh); border-width: calc(0.2vw + 0.2vh);">
 
@@ -105,15 +106,15 @@
             </summary>
             
             <div id="info" class="text-left px-1.5 pb-1.5 mt-3 text-gray-400" style="font-size: calc(0.5vw + 2vh);">
-                <p class="font-bold titulo-cyber">Contacta con nosotros:</p>
+                <p class="font-bold titulo-cyber animate-pulse">Contacta con nosotros:</p>
                 <ol class="list-decimal pl-5 space-y-1 text-gray-400 descripcion-cyber">
                     <li>- Envíanos fotos reales y las especificaciones de tu hardware por nuestro canal oficial.</li>
                     <li>- Fijamos un precio justo de mutuo acuerdo.</li>
                     <li>- ¡Lo promocionamos en nuestro escaparate destacado hasta que se venda!</li>
                 </ol>
             </div>
-
         </details></center>
-    </body>
 
+
+    </body>
 </html>
