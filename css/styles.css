@@ -271,8 +271,14 @@
   .pb-1\.5 {
     padding-bottom: calc(var(--spacing) * 1.5);
   }
+  .mb-10vh {
+    margin-bottom: 10vh;
+  }
   .text-center {
     text-align: center;
+  }
+  .items-center {
+    align-items: center;
   }
   .text-left {
     text-align: left;
@@ -309,8 +315,8 @@
   .animate-range-\[0\%_100\%\] {
     animation-range: 0% 100%;
   }
-  .animate-range-\[20\%_40\%\] {
-    animation-range: 20% 40%;
+  .animate-range-\[15\%_35\%\] {
+    animation-range: 15% 35%;
   }
   .animate-range-\[70\%_95\%\] {
     animation-range: 70% 95%;
@@ -360,12 +366,6 @@
       --tw-scale-z: 10%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
-    .max-lg\:animate-range-\[30\%_43\%\] {
-      animation-range: 30% 43%;
-    }
-    .max-lg\:animate-range-\[65\%_73\%\] {
-        animation-range: 65% 73%;
-    }
   }
   @media (width < 48rem) {
     .max-md\:top-\[-43vw\] {
@@ -376,6 +376,12 @@
     }
     .max-md\:left-\[-43vw\] {
       left: -43vw;
+    }
+    .max-md\:animate-range-\[25\%_38\%\] {
+      animation-range: 25% 38%;
+    }
+    .max-md\:animate-range-\[53\%_60\%\] {
+        animation-range: 53% 60%;
     }
   }
   @media (width >= 40rem) {
@@ -402,6 +408,12 @@
     .md\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    .md\:w-full {
+        width: 100%;
+    }
+    .md\:animate-range-\[37\%_47\%\] {
+      animation-range: 37% 47%;
+    }
   }
   @media (width >= 64rem) {
     .lg\:scale-20 {
@@ -419,9 +431,6 @@
     .lg\:font-bold {
       --tw-font-weight: var(--font-weight-bold);
       font-weight: var(--font-weight-bold);
-    }
-    .lg\:animate-range-\[53\%_65\%\] {
-      animation-range: 53% 65%;
     }
   }
   @media (width >= 96rem) {
