@@ -26,3 +26,4 @@ Landing page de un servicio que trata de vender productos a comisión.
 - [x] mejoras generales de visualización
 - [x] añadir distintas imágenes
 - [x] mejoras en la presentación y descripción del servicio
+- [x] evento al hacer click a productos
